@@ -111,6 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.q8': 'Why does my game show Xbox buttons when I use a PlayStation controller?',
       'faq.a8': 'This is usually not an error. If Xbox 360 is selected as the virtual output, the game sees an Xbox 360 Controller and may display A/B/X/Y prompts. If the game supports PlayStation prompts, select DualShock 4 as the virtual output instead.',
 
+      'faq.q10': 'My Logitech F310 registers inputs twice or behaves incorrectly in games. What should I do?',
+      'faq.a10': 'Set the X / D switch on the back of the Logitech F310 to D (DirectInput). The F310 may currently behave incorrectly in XInput mode, including inputs such as L1/R1 being registered more than once in some games. DirectInput mode works normally with aRacnid. This issue will be addressed in a future update.',
+
       'faq.q9': 'What should I do if aRacnid is still not working correctly?',
       'faq.a9': 'Make sure the required components are installed and your controller is detected by Windows. If the problem continues, open an issue on the official aRacnid GitHub repository and include your controller model, connection type (USB or Bluetooth), Windows version, and a clear description of the problem.',
 
@@ -232,6 +235,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'faq.q8': 'PlayStation kolu kullanıyorum ama oyunda Xbox tuşları görünüyor. Neden?',
       'faq.a8': 'Bu genellikle bir hata değildir. Sanal çıkış olarak Xbox 360 seçiliyse oyun kontrolcüyü Xbox 360 Controller olarak görür ve A/B/X/Y tuşlarını gösterebilir. Oyun PlayStation tuş simgelerini destekliyorsa sanal çıkışı DualShock 4 olarak seçin.',
+
+      'faq.q10': 'Logitech F310 kullanırken tuşlar iki kez algılanıyor veya oyunlarda hatalı çalışıyor. Ne yapmalıyım?',
+      'faq.a10': 'Logitech F310’un arkasındaki X / D anahtarını D (DirectInput) konumuna alın. F310 şu anda XInput modunda bazı oyunlarda L1/R1 gibi tuşların birden fazla kez algılanması gibi sorunlara neden olabilir. DirectInput modu aRacnid ile normal şekilde çalışır. Bu sorun gelecek bir güncellemede ele alınacaktır.',
 
       'faq.q9': 'aRacnid hâlâ düzgün çalışmıyorsa ne yapmalıyım?',
       'faq.a9': 'Gerekli bileşenlerin kurulu olduğundan ve kontrolcünüzün Windows tarafından algılandığından emin olun. Sorun devam ederse resmi aRacnid GitHub deposunda bir Issue açın. Kontrolcü modelinizi, bağlantı türünü (USB veya Bluetooth), Windows sürümünüzü ve sorunu mümkün olduğunca açık şekilde belirtin.',
