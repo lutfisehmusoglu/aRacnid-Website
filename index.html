@@ -13,12 +13,15 @@
   <meta property="og:description" content="Test, remap, customize and emulate supported gamepads on Windows.">
   <meta property="og:type" content="website">
   <title>aRacnid GamepadApp — Windows Gamepad Control & Remapping</title>
+
   <link rel="icon" href="assets/appicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
     rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
@@ -26,31 +29,68 @@
 </head>
 
 <body>
+
   <nav class="navbar navbar-expand-lg navbar-aracnid fixed-top" aria-label="Main navigation">
     <div class="container">
+
       <a class="navbar-brand brand" href="#home" aria-label="aRacnid home">
         <img src="assets/aracnid-logo.png" alt="" class="brand-mark">
         <span>aRacnid</span>
       </a>
+
       <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse"
         data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="mainNav">
+
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mt-3 mt-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#home" data-section="home" data-i18n="nav.home">Home</a>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" data-section="home" data-i18n="nav.home">
+              Home
+            </a>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#download" data-section="download"
-              data-i18n="nav.download">Download</a></li>
-          <li class="nav-item"><a class="nav-link" href="#features" data-section="features"
-              data-i18n="nav.features">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#controllers" data-section="controllers"
-              data-i18n="nav.controllers">Supported Controllers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#faq" data-section="faq" data-i18n="nav.faq">FAQ</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp"
-              target="_blank" rel="noopener"><i class="bi bi-github me-1"></i> GitHub</a></li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#download" data-section="download" data-i18n="nav.download">
+              Download
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#features" data-section="features" data-i18n="nav.features">
+              Features
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#controllers" data-section="controllers" data-i18n="nav.controllers">
+              Supported Controllers
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#faq" data-section="faq" data-i18n="nav.faq">
+              FAQ
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp" target="_blank"
+              rel="noopener">
+              <i class="bi bi-github me-1"></i>
+              GitHub
+            </a>
+          </li>
+
           <li class="nav-item ms-lg-2">
             <div class="language-switch" role="group" aria-label="Language selector">
+
               <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">
                 <span class="fi fi-gb"></span> EN
               </button>
@@ -58,457 +98,1338 @@
               <button type="button" class="lang-btn" data-lang="tr" aria-pressed="false">
                 <span class="fi fi-tr"></span> TR
               </button>
+
             </div>
           </li>
+
         </ul>
       </div>
     </div>
   </nav>
 
+
   <main>
+
+    <!-- HERO -->
     <header id="home" class="hero section-anchor">
+
       <div class="hero-orb hero-orb-one"></div>
       <div class="hero-orb hero-orb-two"></div>
+
       <div class="container position-relative">
+
         <div class="row align-items-center gy-5">
+
           <div class="col-lg-6 hero-copy reveal">
-            <div class="eyebrow"><i class="bi bi-controller"></i><span data-i18n="hero.eyebrow">Windows gamepad
-                utility</span></div>
-            <h1 data-i18n-html="hero.title">Take full control of your <span>gamepad.</span></h1>
-            <p class="hero-lead" data-i18n="hero.description">Test, remap, customize and emulate supported controllers
-              on Windows with aRacnid GamepadApp.</p>
+
+            <div class="eyebrow">
+              <i class="bi bi-controller"></i>
+              <span data-i18n="hero.eyebrow">
+                Windows gamepad utility
+              </span>
+            </div>
+
+            <h1 data-i18n-html="hero.title">
+              Take full control of your <span>gamepad.</span>
+            </h1>
+
+            <p class="hero-lead" data-i18n="hero.description">
+              Test, remap, customize and emulate supported controllers
+              on Windows with aRacnid GamepadApp.
+            </p>
+
             <div class="hero-actions">
+
               <a class="btn btn-primary btn-lg-custom download-trigger"
                 href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/releases/download/v1.0.2/aRacnid-GamepadApp-Setup-1.0.2-x64.exe"
                 data-download="setup">
-                <i class="bi bi-windows me-2"></i><span data-i18n="hero.download">Download for Windows</span>
+
+                <i class="bi bi-windows me-2"></i>
+
+                <span data-i18n="hero.download">
+                  Download for Windows
+                </span>
               </a>
+
               <a class="btn btn-secondary-custom btn-lg-custom"
                 href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp" target="_blank" rel="noopener">
-                <i class="bi bi-github me-2"></i><span data-i18n="hero.github">View on GitHub</span>
+
+                <i class="bi bi-github me-2"></i>
+
+                <span data-i18n="hero.github">
+                  View on GitHub
+                </span>
               </a>
+
             </div>
+
             <div class="hero-meta">
-              <span><i class="bi bi-tag"></i> <strong>v1.0.2</strong> <span data-i18n="hero.latest">Latest
-                  Release</span></span>
-              <span><i class="bi bi-windows"></i> Windows 10 / 11 · 64-bit</span>
-              <span><i class="bi bi-usb-symbol"></i> USB & Bluetooth</span>
+
+              <span>
+                <i class="bi bi-tag"></i>
+                <strong>v1.0.2</strong>
+                <span data-i18n="hero.latest">
+                  Latest Release
+                </span>
+              </span>
+
+              <span>
+                <i class="bi bi-windows"></i>
+                Windows 10 / 11 · 64-bit
+              </span>
+
+              <span>
+                <i class="bi bi-usb-symbol"></i>
+                USB & Bluetooth
+              </span>
+
             </div>
+
           </div>
+
+
           <div class="col-lg-6 reveal">
+
             <div class="hero-visual">
+
               <div class="logo-glow"></div>
+
               <img src="assets/aracnid-logo.png" class="hero-logo" alt="aRacnid GamepadApp logo">
-              <div class="floating-pill pill-version"><span class="status-dot"></span> v1.0.2</div>
-              <div class="floating-pill pill-output"><i class="bi bi-arrow-left-right"></i> DS4 / Xbox 360</div>
+
+              <div class="floating-pill pill-version">
+                <span class="status-dot"></span>
+                v1.0.2
+              </div>
+
+              <div class="floating-pill pill-output">
+                <i class="bi bi-arrow-left-right"></i>
+                DS4 / Xbox 360
+              </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </header>
 
+
+    <!-- DOWNLOAD -->
     <section id="download" class="download-section section-anchor">
+
       <div class="container">
+
         <div class="section-heading text-center reveal">
-          <span class="eyebrow"><i class="bi bi-download"></i><span data-i18n="download.eyebrow">Get
-              aRacnid</span></span>
-          <h2 data-i18n="download.title">Choose your download</h2>
-          <p data-i18n="download.subtitle">Setup is recommended for most users. Both packages are built for Windows 10 /
-            11 64-bit.</p>
+
+          <span class="eyebrow">
+            <i class="bi bi-download"></i>
+            <span data-i18n="download.eyebrow">
+              Get aRacnid
+            </span>
+          </span>
+
+          <h2 data-i18n="download.title">
+            Choose your download
+          </h2>
+
+          <p data-i18n="download.subtitle">
+            Setup is recommended for most users.
+            Both packages are built for Windows 10 / 11 64-bit.
+          </p>
+
         </div>
+
+
         <div class="row g-4 justify-content-center download-grid">
+
           <div class="col-lg-5 reveal">
+
             <article class="download-card recommended h-100">
-              <div class="recommended-badge" data-i18n="download.recommended">Recommended</div>
-              <div class="download-icon"><i class="bi bi-window-stack"></i></div>
-              <h3 data-i18n="download.setupTitle">Setup Installer</h3>
-              <p data-i18n="download.setupDesc">The easiest way to install aRacnid on your PC.</p>
-              <div class="download-spec">Windows 10 / 11 · x64 · 53 MB</div>
+
+              <div class="recommended-badge" data-i18n="download.recommended">
+                Recommended
+              </div>
+
+              <div class="download-icon">
+                <i class="bi bi-window-stack"></i>
+              </div>
+
+              <h3 data-i18n="download.setupTitle">
+                Setup Installer
+              </h3>
+
+              <p data-i18n="download.setupDesc">
+                The easiest way to install aRacnid on your PC.
+              </p>
+
+              <div class="download-spec">
+                Windows 10 / 11 · x64 · 53 MB
+              </div>
+
               <a class="btn btn-primary w-100 download-trigger"
                 href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/releases/download/v1.0.2/aRacnid-GamepadApp-Setup-1.0.2-x64.exe"
                 data-download="setup">
-                <i class="bi bi-download me-2"></i><span data-i18n="download.setupButton">Download Setup</span>
+
+                <i class="bi bi-download me-2"></i>
+
+                <span data-i18n="download.setupButton">
+                  Download Setup
+                </span>
+
               </a>
+
             </article>
+
           </div>
+
+
           <div class="col-lg-5 reveal">
+
             <article class="download-card h-100">
-              <div class="download-icon"><i class="bi bi-file-earmark-zip"></i></div>
-              <h3 data-i18n="download.portableTitle">Portable ZIP</h3>
-              <p data-i18n="download.portableDesc">Extract the archive and run aRacnid without using the installer.</p>
-              <div class="download-spec">Windows 10 / 11 · x64 · 70 MB</div>
+
+              <div class="download-icon">
+                <i class="bi bi-file-earmark-zip"></i>
+              </div>
+
+              <h3 data-i18n="download.portableTitle">
+                Portable ZIP
+              </h3>
+
+              <p data-i18n="download.portableDesc">
+                Extract the archive and run aRacnid without using the installer.
+              </p>
+
+              <div class="download-spec">
+                Windows 10 / 11 · x64 · 70 MB
+              </div>
+
               <a class="btn btn-secondary-custom w-100 download-trigger"
                 href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/releases/download/v1.0.2/aRacnid-GamepadApp-1.0.2-win-x64-portable.zip"
                 data-download="portable">
-                <i class="bi bi-file-earmark-arrow-down me-2"></i><span data-i18n="download.portableButton">Download
-                  ZIP</span>
+
+                <i class="bi bi-file-earmark-arrow-down me-2"></i>
+
+                <span data-i18n="download.portableButton">
+                  Download ZIP
+                </span>
+
               </a>
+
             </article>
+
           </div>
+
         </div>
+
+
         <div class="smartscreen-note reveal">
+
           <i class="bi bi-shield-exclamation"></i>
-          <p class="mb-0" data-i18n="download.smartScreen">aRacnid and its installer are currently unsigned, so Windows
-            SmartScreen may display a warning on first launch.</p>
+
+          <p class="mb-0" data-i18n="download.smartScreen">
+            aRacnid and its installer are currently unsigned,
+            so Windows SmartScreen may display a warning on first launch.
+          </p>
+
         </div>
+
 
         <div id="installation" class="installation-panel reveal section-anchor">
+
           <div class="installation-intro">
-            <span class="eyebrow"><i class="bi bi-list-check"></i><span
-                data-i18n="install.eyebrow">Installation</span></span>
-            <h2 data-i18n="install.title">Up and running in four steps</h2>
-            <p data-i18n="install.subtitle">After your download starts, follow these steps to prepare virtual controller
-              output.</p>
+
+            <span class="eyebrow">
+              <i class="bi bi-list-check"></i>
+
+              <span data-i18n="install.eyebrow">
+                Installation
+              </span>
+            </span>
+
+            <h2 data-i18n="install.title">
+              Up and running in four steps
+            </h2>
+
+            <p data-i18n="install.subtitle">
+              After your download starts,
+              follow these steps to prepare virtual controller output.
+            </p>
+
           </div>
+
+
           <div class="install-steps">
-            <div class="install-step"><span class="step-number">01</span><i class="bi bi-download"></i>
+
+            <div class="install-step">
+
+              <span class="step-number">01</span>
+
+              <i class="bi bi-download"></i>
+
               <div>
-                <h3 data-i18n="install.step1Title">Download</h3>
-                <p data-i18n="install.step1Text">Run the Setup installer, or extract the Portable ZIP.</p>
+                <h3 data-i18n="install.step1Title">
+                  Download
+                </h3>
+
+                <p data-i18n="install.step1Text">
+                  Run the Setup installer,
+                  or extract the Portable ZIP.
+                </p>
               </div>
+
             </div>
-            <div class="install-step"><span class="step-number">02</span><i class="bi bi-play-circle"></i>
+
+
+            <div class="install-step">
+
+              <span class="step-number">02</span>
+
+              <i class="bi bi-play-circle"></i>
+
               <div>
-                <h3 data-i18n="install.step2Title">Launch aRacnid</h3>
-                <p data-i18n="install.step2Text">Open the app and select or create your profile.</p>
+                <h3 data-i18n="install.step2Title">
+                  Launch aRacnid
+                </h3>
+
+                <p data-i18n="install.step2Text">
+                  Open the app and select or create your profile.
+                </p>
               </div>
+
             </div>
-            <div class="install-step"><span class="step-number">03</span><i class="bi bi-boxes"></i>
+
+
+            <div class="install-step">
+
+              <span class="step-number">03</span>
+
+              <i class="bi bi-boxes"></i>
+
               <div>
-                <h3 data-i18n="install.step3Title">Manage Components</h3>
-                <p data-i18n-html="install.step3Text">Open <strong>Advanced → Manage Components</strong> and install
-                  ViGEmBus and HidHide when needed.</p>
+                <h3 data-i18n="install.step3Title">
+                  Manage Components
+                </h3>
+
+                <p data-i18n-html="install.step3Text">
+                  Open <strong>Advanced → Manage Components</strong>
+                  and install ViGEmBus and HidHide when needed.
+                </p>
               </div>
+
             </div>
-            <div class="install-step"><span class="step-number">04</span><i class="bi bi-controller"></i>
+
+
+            <div class="install-step">
+
+              <span class="step-number">04</span>
+
+              <i class="bi bi-controller"></i>
+
               <div>
-                <h3 data-i18n="install.step4Title">Connect & Play</h3>
-                <p data-i18n="install.step4Text">Connect a supported controller by USB or Bluetooth and choose your
-                  virtual output.</p>
+                <h3 data-i18n="install.step4Title">
+                  Connect & Play
+                </h3>
+
+                <p data-i18n="install.step4Text">
+                  Connect a supported controller by USB or Bluetooth
+                  and choose your virtual output.
+                </p>
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- FEATURES -->
     <section id="features" class="features section-anchor">
+
       <div class="container">
+
         <div class="section-heading reveal">
-          <span class="eyebrow"><i class="bi bi-stars"></i><span data-i18n="features.eyebrow">Features</span></span>
-          <h2 data-i18n="features.title">Everything you need between your controller and the game</h2>
-          <p data-i18n="features.subtitle">Built around real-time testing, flexible remapping and clean virtual
-            controller output.</p>
+
+          <span class="eyebrow">
+            <i class="bi bi-stars"></i>
+
+            <span data-i18n="features.eyebrow">
+              Features
+            </span>
+          </span>
+
+          <h2 data-i18n="features.title">
+            Everything you need between your controller and the game
+          </h2>
+
+          <p data-i18n="features.subtitle">
+            Built around real-time testing,
+            flexible remapping and clean virtual controller output.
+          </p>
+
         </div>
 
+
         <article class="feature-row reveal">
+
           <div class="feature-copy">
+
             <span class="feature-index">01</span>
-            <h3 data-i18n="features.testerTitle">Gamepad Tester</h3>
-            <p data-i18n="features.testerText">See buttons, sticks, triggers and controller status react in real time.
-              aRacnid can visualize both DualShock-style and Xbox-style layouts.</p>
+
+            <h3 data-i18n="features.testerTitle">
+              Gamepad Tester
+            </h3>
+
+            <p data-i18n="features.testerText">
+              See buttons, sticks, triggers and controller status react in real time.
+              aRacnid can visualize both DualShock-style and Xbox-style layouts.
+            </p>
+
             <ul class="feature-points">
-              <li><i class="bi bi-check2"></i><span data-i18n="features.testerPoint1">Live button and analog
-                  feedback</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.testerPoint2">Connection and battery
-                  information</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.testerPoint3">DS4 and Xbox visual layouts</span>
+
+              <li>
+                <i class="bi bi-check2"></i>
+                <span data-i18n="features.testerPoint1">
+                  Live button and analog feedback
+                </span>
               </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+                <span data-i18n="features.testerPoint2">
+                  Connection and battery information
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+                <span data-i18n="features.testerPoint3">
+                  DS4 and Xbox visual layouts
+                </span>
+              </li>
+
             </ul>
+
           </div>
+
+
           <div class="feature-media app-window">
+
             <img src="assets/screenshots/tester-ds4.png" alt="aRacnid Gamepad Tester with DualShock layout"
               loading="lazy">
+
           </div>
+
         </article>
 
+
         <article class="feature-row reverse reveal">
+
           <div class="feature-copy">
+
             <span class="feature-index">02</span>
-            <h3 data-i18n="features.remapTitle">Button Remapping</h3>
-            <p data-i18n="features.remapText">Map buttons, sticks and triggers to the output layout you want, then tune
-              deadzone, anti-deadzone and sensitivity settings.</p>
+
+            <h3 data-i18n="features.remapTitle">
+              Button Remapping
+            </h3>
+
+            <p data-i18n="features.remapText">
+              Map buttons, sticks and triggers to the output layout you want,
+              then tune deadzone, anti-deadzone and sensitivity settings.
+            </p>
+
             <ul class="feature-points">
-              <li><i class="bi bi-check2"></i><span data-i18n="features.remapPoint1">Per-control remapping</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.remapPoint2">Analog deadzone and sensitivity
-                  controls</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.remapPoint3">Vibration testing and trigger
-                  mappings</span></li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.remapPoint1">
+                  Per-control remapping
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.remapPoint2">
+                  Analog deadzone and sensitivity controls
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.remapPoint3">
+                  Vibration testing and trigger mappings
+                </span>
+              </li>
+
             </ul>
+
           </div>
+
+
           <div class="feature-media app-window media-stack">
+
             <img src="assets/screenshots/remap-ds4.png" alt="aRacnid remapping screen with DualShock 4 output"
               loading="lazy">
+
             <img src="assets/screenshots/remap-xbox.png" alt="aRacnid remapping screen with Xbox 360 output"
               loading="lazy" class="stack-secondary">
+
           </div>
+
         </article>
 
+
         <article class="feature-row reveal">
+
           <div class="feature-copy">
+
             <span class="feature-index">03</span>
-            <h3 data-i18n="features.virtualTitle">Virtual DS4 or Xbox 360 Output</h3>
-            <p data-i18n="features.virtualText">Use a supported physical controller and present it to games as a virtual
-              DualShock 4 or Xbox 360 Controller.</p>
+
+            <h3 data-i18n="features.virtualTitle">
+              Virtual DS4 or Xbox 360 Output
+            </h3>
+
+            <p data-i18n="features.virtualText">
+              Use a supported physical controller
+              and present it to games as a virtual DualShock 4 or Xbox 360 Controller.
+            </p>
+
             <div class="output-flow" aria-label="Physical input to virtual output">
-              <div><i class="bi bi-controller"></i><span data-i18n="features.physicalInput">Physical input</span></div>
+
+              <div>
+                <i class="bi bi-controller"></i>
+
+                <span data-i18n="features.physicalInput">
+                  Physical input
+                </span>
+              </div>
+
               <i class="bi bi-arrow-right flow-arrow"></i>
-              <div><i class="bi bi-sliders"></i><span>aRacnid</span></div>
+
+              <div>
+                <i class="bi bi-sliders"></i>
+                <span>aRacnid</span>
+              </div>
+
               <i class="bi bi-arrow-right flow-arrow"></i>
-              <div><i class="bi bi-controller"></i><span>DS4 / Xbox 360</span></div>
+
+              <div>
+                <i class="bi bi-controller"></i>
+                <span>DS4 / Xbox 360</span>
+              </div>
+
             </div>
+
           </div>
+
+
           <div class="feature-media split-media">
-            <div class="app-window"><img src="assets/screenshots/gamepad-ds4.png"
-                alt="aRacnid main screen with DualShock 4" loading="lazy"></div>
-            <div class="app-window"><img src="assets/screenshots/gamepad-xbox.png"
-                alt="aRacnid main screen with Xbox layout" loading="lazy"></div>
+
+            <div class="app-window">
+
+              <img src="assets/screenshots/gamepad-ds4.png" alt="aRacnid main screen with DualShock 4" loading="lazy">
+
+            </div>
+
+            <div class="app-window">
+
+              <img src="assets/screenshots/gamepad-xbox.png" alt="aRacnid main screen with Xbox layout" loading="lazy">
+
+            </div>
+
           </div>
+
         </article>
+
 
         <article class="feature-row reverse reveal">
+
           <div class="feature-copy">
+
             <span class="feature-index">04</span>
-            <h3 data-i18n="features.lightbarTitle">Lightbar Customization</h3>
-            <p data-i18n="features.lightbarText">Choose custom colors, save color presets and control the controller
-              lightbar directly from aRacnid.</p>
+
+            <h3 data-i18n="features.lightbarTitle">
+              Lightbar Customization
+            </h3>
+
+            <p data-i18n="features.lightbarText">
+              Choose custom colors, save color presets
+              and control the controller lightbar directly from aRacnid.
+            </p>
+
             <ul class="feature-points">
-              <li><i class="bi bi-check2"></i><span data-i18n="features.lightbarPoint1">Color picker with RGB and HEX
-                  controls</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.lightbarPoint2">Quick color presets</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.lightbarPoint3">Lightbar on/off control</span>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.lightbarPoint1">
+                  Color picker with RGB and HEX controls
+                </span>
               </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.lightbarPoint2">
+                  Quick color presets
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.lightbarPoint3">
+                  Lightbar on/off control
+                </span>
+              </li>
+
             </ul>
+
           </div>
+
+
           <div class="feature-media app-window">
+
             <img src="assets/screenshots/lightbar.png" alt="aRacnid Lightbar color customization" loading="lazy">
+
           </div>
+
         </article>
+
 
         <article class="feature-row reveal">
+
           <div class="feature-copy">
+
             <span class="feature-index">05</span>
-            <h3 data-i18n="features.advancedTitle">Advanced Components</h3>
-            <p data-i18n="features.advancedText">Manage the drivers used for virtual controller output from inside the
-              app. HidHide also includes a Configure action for double-input prevention.</p>
+
+            <h3 data-i18n="features.advancedTitle">
+              Advanced Components
+            </h3>
+
+            <p data-i18n="features.advancedText">
+              Manage the drivers used for virtual controller output from inside the app.
+              HidHide also includes a Configure action for double-input prevention.
+            </p>
+
             <ul class="feature-points">
-              <li><i class="bi bi-check2"></i><span data-i18n="features.advancedPoint1">Install ViGEmBus and HidHide
-                  from Advanced → Manage Components</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.advancedPoint2">Configure HidHide from
-                  aRacnid</span></li>
-              <li><i class="bi bi-check2"></i><span data-i18n="features.advancedPoint3">Third-party components are
-                  downloaded from their official GitHub sources only when you choose to install them</span></li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.advancedPoint1">
+                  Install ViGEmBus and HidHide from Advanced → Manage Components
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.advancedPoint2">
+                  Configure HidHide from aRacnid
+                </span>
+              </li>
+
+              <li>
+                <i class="bi bi-check2"></i>
+
+                <span data-i18n="features.advancedPoint3">
+                  Third-party components are downloaded from their official GitHub sources
+                  only when you choose to install them
+                </span>
+              </li>
+
             </ul>
+
           </div>
+
+
           <div class="feature-media app-window">
+
             <img src="assets/screenshots/advanced-components.png" alt="aRacnid Advanced component management screen"
               loading="lazy">
+
           </div>
+
         </article>
+
       </div>
+
     </section>
 
+
+    <!-- CONTROLLERS -->
     <section id="controllers" class="controllers-section section-anchor">
+
       <div class="container">
+
         <div class="section-heading text-center reveal">
-          <span class="eyebrow"><i class="bi bi-controller"></i><span
-              data-i18n="controllers.eyebrow">Compatibility</span></span>
-          <h2 data-i18n="controllers.title">Supported physical controllers</h2>
-          <p data-i18n="controllers.subtitle">Connect supported controllers by USB or Bluetooth where the controller
-            provides it.</p>
+
+          <span class="eyebrow">
+
+            <i class="bi bi-controller"></i>
+
+            <span data-i18n="controllers.eyebrow">
+              Compatibility
+            </span>
+
+          </span>
+
+          <h2 data-i18n="controllers.title">
+            Supported physical controllers
+          </h2>
+
+          <p data-i18n="controllers.subtitle">
+            Connect supported controllers by USB or Bluetooth
+            where the controller provides it.
+          </p>
+
         </div>
+
+
         <div class="row g-4 controller-grid">
+
           <div class="col-lg-4 reveal">
+
             <article class="controller-card h-100">
-              <div class="controller-icon"><i class="bi bi-playstation"></i></div>
+
+              <div class="controller-icon">
+                <i class="bi bi-playstation"></i>
+              </div>
+
               <h3>PlayStation</h3>
-              <p>DualShock 4 v1 · DualShock 4 v2 · DS4 USB Wireless Adapter · DualSense · DualSense Edge</p>
+
+              <p>
+                DualShock 4 v1 ·
+                DualShock 4 v2 ·
+                DS4 USB Wireless Adapter ·
+                DualSense ·
+                DualSense Edge
+              </p>
+
             </article>
+
           </div>
+
+
           <div class="col-lg-4 reveal">
+
             <article class="controller-card h-100">
-              <div class="controller-icon"><i class="bi bi-nintendo-switch"></i></div>
+
+              <div class="controller-icon">
+                <i class="bi bi-nintendo-switch"></i>
+              </div>
+
               <h3>Nintendo</h3>
-              <p>Switch Pro Controller · Nintendo Joy-Con</p>
+
+              <p>
+                Switch Pro Controller · Nintendo Joy-Con
+              </p>
+
             </article>
+
           </div>
+
+
           <div class="col-lg-4 reveal">
+
             <article class="controller-card h-100">
-              <div class="controller-icon"><i class="bi bi-controller"></i></div>
+
+              <div class="controller-icon">
+                <i class="bi bi-controller"></i>
+              </div>
+
               <h3>Logitech</h3>
-              <p>F310 · F510 · F710</p>
+
+              <p>
+                F310 · F510 · F710
+              </p>
+
             </article>
+
           </div>
+
         </div>
+
+
         <div class="compatibility-notes reveal">
-          <div class="compat-note good"><i class="bi bi-arrow-repeat"></i>
-            <div><strong data-i18n="controllers.virtualLabel">Virtual output</strong><span
-                data-i18n="controllers.virtualText">DualShock 4 or Xbox 360 Controller</span></div>
+
+          <div class="compat-note good">
+
+            <i class="bi bi-arrow-repeat"></i>
+
+            <div>
+
+              <strong data-i18n="controllers.virtualLabel">
+                Virtual output
+              </strong>
+
+              <span data-i18n="controllers.virtualText">
+                DualShock 4 or Xbox 360 Controller
+              </span>
+
+            </div>
+
           </div>
-          <div class="compat-note"><i class="bi bi-info-circle"></i>
-            <div><strong data-i18n="controllers.unsupportedLabel">Not supported as physical input yet</strong><span
-                data-i18n="controllers.unsupportedText">Xbox 360 / Xbox One / Xbox Series controllers and Steam
-                Controller</span></div>
+
+
+          <div class="compat-note">
+
+            <i class="bi bi-info-circle"></i>
+
+            <div>
+
+              <strong data-i18n="controllers.unsupportedLabel">
+                Not supported as physical input yet
+              </strong>
+
+              <span data-i18n="controllers.unsupportedText">
+                Xbox 360 / Xbox One / Xbox Series controllers and Steam Controller
+              </span>
+
+            </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
 
+
+    <!-- FAQ -->
     <section id="faq" class="faq-section section-anchor">
+
       <div class="container">
+
         <div class="section-heading text-center reveal">
-          <span class="eyebrow"><i class="bi bi-question-circle"></i><span>FAQ</span></span>
-          <h2 data-i18n="faq.title">Frequently asked questions</h2>
-          <p data-i18n="faq.subtitle">Quick answers to the things users are most likely to need before getting started.
+
+          <span class="eyebrow">
+            <i class="bi bi-question-circle"></i>
+            <span>FAQ</span>
+          </span>
+
+          <h2 data-i18n="faq.title">
+            Frequently asked questions
+          </h2>
+
+          <p data-i18n="faq.subtitle">
+            Quick answers to the things users are most likely to need before getting started.
           </p>
+
         </div>
+
+
         <div class="accordion faq-accordion reveal" id="faqAccordion">
+
+
+          <!-- FAQ 1 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse"
-                data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" data-i18n="faq.q1">Which controllers
-                does aRacnid support?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                aria-expanded="true" aria-controls="faq1" data-i18n="faq.q1">
+
+                Which controllers does aRacnid support?
+
+              </button>
+
+            </h3>
+
             <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a1">aRacnid supports DualShock 4 v1/v2, DualShock 4 USB
-                Wireless Adapter, DualSense, DualSense Edge, Nintendo Switch Pro Controller, Nintendo Joy-Con, and
-                Logitech F310/F510/F710. Xbox and Steam controllers are not currently supported as physical input
-                devices.</div>
+
+              <div class="accordion-body" data-i18n="faq.a1">
+
+                aRacnid supports DualShock 4 v1/v2,
+                DualShock 4 USB Wireless Adapter,
+                DualSense,
+                DualSense Edge,
+                Nintendo Switch Pro Controller,
+                Nintendo Joy-Con,
+                and Logitech F310/F510/F710.
+                Xbox and Steam controllers are not currently supported as physical input devices.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 2 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2"
-                data-i18n="faq.q2">Do I need ViGEmBus and HidHide?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+                aria-expanded="false" aria-controls="faq2" data-i18n="faq.q2">
+
+                Do I need ViGEmBus and HidHide?
+
+              </button>
+
+            </h3>
+
             <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a2">ViGEmBus is required for virtual controller output. HidHide
-                is recommended to prevent double input by hiding the physical controller from games. Both can be
-                installed from Advanced → Manage Components.</div>
+
+              <div class="accordion-body" data-i18n="faq.a2">
+
+                ViGEmBus is required for virtual controller output.
+                HidHide is recommended to prevent double input
+                by hiding the physical controller from games.
+                Both can be installed from Advanced → Manage Components.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 3 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3"
-                data-i18n="faq.q3">Can I use aRacnid over Bluetooth?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+                aria-expanded="false" aria-controls="faq3" data-i18n="faq.q3">
+
+                Can I use aRacnid over Bluetooth?
+
+              </button>
+
+            </h3>
+
             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a3">Yes. Supported controllers can be used over Bluetooth when
-                the controller and Windows provide a compatible Bluetooth connection. USB connections are also
-                supported.</div>
+
+              <div class="accordion-body" data-i18n="faq.a3">
+
+                Yes.
+                Supported controllers can be used over Bluetooth
+                when the controller and Windows provide a compatible Bluetooth connection.
+                USB connections are also supported.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 4 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4"
-                data-i18n="faq.q4">Why does Windows SmartScreen show a warning?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                aria-expanded="false" aria-controls="faq4" data-i18n="faq.q4">
+
+                Why does Windows SmartScreen show a warning?
+
+              </button>
+
+            </h3>
+
             <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a4">aRacnid and its installer are currently unsigned, so
-                Windows SmartScreen may display a warning on first launch. Download aRacnid only from the official
-                GitHub repository or this website.</div>
+
+              <div class="accordion-body" data-i18n="faq.a4">
+
+                aRacnid and its installer are currently unsigned,
+                so Windows SmartScreen may display a warning on first launch.
+                Download aRacnid only from the official GitHub repository or this website.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 5 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5"
-                data-i18n="faq.q5">My controller causes double input in games. What should I do?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"
+                aria-expanded="false" aria-controls="faq5" data-i18n="faq.q5">
+
+                My controller causes double input in games. What should I do?
+
+              </button>
+
+            </h3>
+
             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a5">First, close aRacnid and connect your controller to your
-                PC. Open HidHide Configuration and go to the Devices tab. Check the box next to your controller, then
-                enable Enable device hiding at the bottom of the window. Finally, disconnect your controller once and
-                reconnect it.</div>
+
+              <div class="accordion-body" data-i18n="faq.a5">
+
+                First, close aRacnid and connect your controller to your PC.
+                Open HidHide Configuration and go to the Devices tab.
+                Check the box next to your controller,
+                then enable Enable device hiding at the bottom of the window.
+                Finally, disconnect your controller once and reconnect it.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 6 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6"
-                data-i18n="faq.q6">My controller is not detected by aRacnid. What should I do?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6"
+                aria-expanded="false" aria-controls="faq6" data-i18n="faq.q6">
+
+                My controller is not detected by aRacnid. What should I do?
+
+              </button>
+
+            </h3>
+
             <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a6">First, close aRacnid and open HidHide Configuration. Go to
-                the Applications tab and click the + button in the bottom-right corner. Select aRacnid GamepadApp from
-                your desktop and add it to the list. Then close HidHide and reopen aRacnid.</div>
+
+              <div class="accordion-body" data-i18n="faq.a6">
+
+                First, close aRacnid and open HidHide Configuration.
+                Go to the Applications tab
+                and click the + button in the bottom-right corner.
+                Select aRacnid GamepadApp from your desktop
+                and add it to the list.
+                Then close HidHide and reopen aRacnid.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 7 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7"
-                data-i18n="faq.q7">The virtual controller is not detected in my game. What should I do?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7"
+                aria-expanded="false" aria-controls="faq7" data-i18n="faq.q7">
+
+                The virtual controller is not detected in my game.
+                What should I do?
+
+              </button>
+
+            </h3>
+
             <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a7">Check Advanced → Manage Components and make sure ViGEmBus
-                is installed. If your physical controller is detected by aRacnid, make sure a virtual DualShock 4 or
-                Xbox 360 output is selected. Close the game, keep aRacnid running, and launch the game again. If needed,
-                disconnect and reconnect the controller once.</div>
+
+              <div class="accordion-body" data-i18n="faq.a7">
+
+                Check Advanced → Manage Components
+                and make sure ViGEmBus is installed.
+                If your physical controller is detected by aRacnid,
+                make sure a virtual DualShock 4 or Xbox 360 output is selected.
+                Close the game,
+                keep aRacnid running,
+                and launch the game again.
+                If needed,
+                disconnect and reconnect the controller once.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 8 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8"
-                data-i18n="faq.q8">Why does my game show Xbox buttons when I use a PlayStation controller?</button></h3>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8"
+                aria-expanded="false" aria-controls="faq8" data-i18n="faq.q8">
+
+                Why does my game show Xbox buttons
+                when I use a PlayStation controller?
+
+              </button>
+
+            </h3>
+
             <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a8">This is usually not an error. If Xbox 360 is selected as
-                the virtual output, the game sees an Xbox 360 Controller and may display A/B/X/Y prompts. If the game
-                supports PlayStation prompts, select DualShock 4 as the virtual output instead.</div>
+
+              <div class="accordion-body" data-i18n="faq.a8">
+
+                This is usually not an error.
+                If Xbox 360 is selected as the virtual output,
+                the game sees an Xbox 360 Controller
+                and may display A/B/X/Y prompts.
+                If the game supports PlayStation prompts,
+                select DualShock 4 as the virtual output instead.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- LOGITECH F310 -->
           <div class="accordion-item">
-            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button"
-                data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9"
-                data-i18n="faq.q9">What should I do if aRacnid is still not working correctly?</button></h3>
-            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body" data-i18n="faq.a9">Make sure the required components are installed and your
-                controller is detected by Windows. If the problem continues, open an issue on the official aRacnid
-                GitHub repository and include your controller model, connection type (USB or Bluetooth), Windows
-                version, and a clear description of the problem.</div>
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10"
+                aria-expanded="false" aria-controls="faq10" data-i18n="faq.q10">
+
+                My Logitech F310 registers inputs twice
+                or behaves incorrectly in games.
+                What should I do?
+
+              </button>
+
+            </h3>
+
+            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body" data-i18n="faq.a10">
+
+                Set the X / D switch on the back of the Logitech F310
+                to D (DirectInput).
+                The F310 may currently behave incorrectly in XInput mode,
+                including inputs such as L1/R1
+                being registered more than once in some games.
+                DirectInput mode works normally with aRacnid.
+                This issue will be addressed in a future update.
+
+              </div>
+
             </div>
+
           </div>
+
+
+          <!-- FAQ 9 -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9"
+                aria-expanded="false" aria-controls="faq9" data-i18n="faq.q9">
+
+                What should I do if aRacnid is still not working correctly?
+
+              </button>
+
+            </h3>
+
+            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body" data-i18n="faq.a9">
+
+                Make sure the required components are installed
+                and your controller is detected by Windows.
+                If the problem continues,
+                open an issue on the official aRacnid GitHub repository
+                and include your controller model,
+                connection type (USB or Bluetooth),
+                Windows version,
+                and a clear description of the problem.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
         </div>
+
+
         <div class="help-card reveal">
-          <div><span class="eyebrow mb-2"><i class="bi bi-github"></i> GitHub</span>
-            <h3 data-i18n="faq.helpTitle">Need help or found a bug?</h3>
-            <p data-i18n="faq.helpText">Open a GitHub Issue for support, bug reports or feature requests.</p>
+
+          <div>
+
+            <span class="eyebrow mb-2">
+              <i class="bi bi-github"></i>
+              GitHub
+            </span>
+
+            <h3 data-i18n="faq.helpTitle">
+              Need help or found a bug?
+            </h3>
+
+            <p data-i18n="faq.helpText">
+              Open a GitHub Issue for support,
+              bug reports or feature requests.
+            </p>
+
           </div>
+
+
           <a class="btn btn-primary" href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/issues" target="_blank"
-            rel="noopener"><i class="bi bi-box-arrow-up-right me-2"></i><span data-i18n="faq.helpButton">Open GitHub
-              Issue</span></a>
+            rel="noopener">
+
+            <i class="bi bi-box-arrow-up-right me-2"></i>
+
+            <span data-i18n="faq.helpButton">
+              Open GitHub Issue
+            </span>
+
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
   <footer class="site-footer">
+
     <div class="container">
+
       <div class="footer-main">
+
         <div class="footer-brand">
-          <a class="brand" href="#home"><img src="assets/aracnid-logo.png" alt=""
-              class="brand-mark"><span>aRacnid</span></a>
-          <p data-i18n="footer.tagline">Gamepad testing, remapping, customization and virtual output for Windows.</p>
+
+          <a class="brand" href="#home">
+
+            <img src="assets/aracnid-logo.png" alt="" class="brand-mark">
+
+            <span>aRacnid</span>
+
+          </a>
+
+          <p data-i18n="footer.tagline">
+            Gamepad testing,
+            remapping,
+            customization and virtual output for Windows.
+          </p>
+
         </div>
+
+
         <div class="footer-links">
-          <a href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp" target="_blank" rel="noopener"><i
-              class="bi bi-github"></i> GitHub</a>
+
+          <a href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp" target="_blank" rel="noopener">
+
+            <i class="bi bi-github"></i>
+            GitHub
+
+          </a>
+
           <a href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/issues" target="_blank" rel="noopener"
-            data-i18n="footer.support">Support</a>
+            data-i18n="footer.support">
+
+            Support
+
+          </a>
+
           <a href="https://github.com/lutfisehmusoglu/aRacnid-GamepadApp/blob/main/LICENSE" target="_blank"
-            rel="noopener">GPL-3.0</a>
+            rel="noopener">
+
+            GPL-3.0
+
+          </a>
+
         </div>
+
       </div>
-      <div class="privacy-line"><i class="bi bi-shield-check"></i><span data-i18n="footer.privacy">Privacy-first:
-          aRacnid does not collect telemetry, usage data or personal information.</span></div>
+
+
+      <div class="privacy-line">
+
+        <i class="bi bi-shield-check"></i>
+
+        <span data-i18n="footer.privacy">
+          Privacy-first:
+          aRacnid does not collect telemetry,
+          usage data or personal information.
+        </span>
+
+      </div>
+
+
       <div class="footer-bottom">
-        <div><span>aRacnid GamepadApp © 2026</span><span> · </span><span data-i18n="footer.developed">Developed
-            by</span> <a href="https://github.com/lutfisehmusoglu" target="_blank"
-            rel="noopener">lutfisehmusoglu</a><span> · </span><span data-i18n="footer.license">aRacnid GamepadApp is
-            licensed under GPL-3.0.</span></div>
-        <p class="disclaimer" data-i18n="footer.disclaimer">aRacnid is not affiliated with or endorsed by Sony
-          Interactive Entertainment, Microsoft, Nintendo, Valve, or Logitech.</p>
+
+        <div>
+
+          <span>
+            aRacnid GamepadApp © 2026
+          </span>
+
+          <span> · </span>
+
+          <span data-i18n="footer.developed">
+            Developed by
+          </span>
+
+          <a href="https://github.com/lutfisehmusoglu" target="_blank" rel="noopener">
+
+            lutfisehmusoglu
+
+          </a>
+
+          <span> · </span>
+
+          <span data-i18n="footer.license">
+            aRacnid GamepadApp is licensed under GPL-3.0.
+          </span>
+
+        </div>
+
+
+        <p class="disclaimer" data-i18n="footer.disclaimer">
+
+          aRacnid is not affiliated with or endorsed by
+          Sony Interactive Entertainment,
+          Microsoft,
+          Nintendo,
+          Valve,
+          or Logitech.
+
+        </p>
+
       </div>
+
     </div>
+
   </footer>
 
-  <button class="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">
+
+    <i class="bi bi-arrow-up"></i>
+
+  </button>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 
+
   <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token":"a8a3d339b3dc4800ba9422c8094eb496"}'></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token":"a8a3d339b3dc4800ba9422c8094eb496"}'>
+    </script>
   <!-- End Cloudflare Web Analytics -->
 
 </body>
