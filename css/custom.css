@@ -865,6 +865,33 @@ p {
   font-size: .82rem;
 }
 
+.f310-note {
+  display: flex;
+  gap: .85rem;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  background: rgba(9, 19, 33, .82);
+  border-radius: 14px;
+  padding: 1rem 1.15rem;
+  margin-top: 1.4rem;
+}
+
+.f310-note > i {
+  color: var(--warning);
+  font-size: 1.15rem;
+  margin-top: .15rem;
+  flex-shrink: 0;
+}
+
+.f310-note p {
+  color: var(--muted-2);
+  font-size: .82rem;
+}
+
+.f310-note strong {
+  color: var(--text);
+}
+
 /* FAQ */
 .faq-section {
   padding: 7rem 0;

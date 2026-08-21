@@ -83,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'controllers.virtualText': 'DualShock 4 or Xbox 360 Controller',
       'controllers.unsupportedLabel': 'Not supported as physical input yet',
       'controllers.unsupportedText': 'Xbox 360 / Xbox One / Xbox Series controllers and Steam Controller',
+      'controllers.f310Note': '<strong>Note:</strong> The Logitech F310 may currently produce incorrect or repeated inputs in some games while using XInput mode. The cause is still being investigated. To avoid issues, we recommend using the controller in <strong>DirectInput (D)</strong> mode. See <strong>FAQ #9</strong> if you are unsure how to switch modes.',
 
       'faq.title': 'Frequently asked questions',
       'faq.subtitle': 'Quick answers to the most common setup and troubleshooting questions.',
@@ -112,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a8': 'This is usually not an error. If Xbox 360 is selected as the virtual output, the game sees an Xbox 360 Controller and may display A/B/X/Y prompts. If the game supports PlayStation prompts, select DualShock 4 as the virtual output instead.',
 
       'faq.q10': 'My Logitech F310 registers inputs twice or behaves incorrectly in games. What should I do?',
-      'faq.a10': 'Set the X / D switch on the back of the Logitech F310 to D (DirectInput). The F310 may currently behave incorrectly in XInput mode, including inputs such as L1/R1 being registered more than once in some games. DirectInput mode works normally with aRacnid. This issue will be addressed in a future update.',
+      'faq.a10': 'The Logitech F310 may currently produce incorrect or repeated inputs, such as L1/R1 being registered more than once, while using <strong>XInput (X)</strong> mode. The exact cause is still being investigated. As a temporary workaround, move the <strong>X / D</strong> switch on the back of the F310 to <strong>D (DirectInput)</strong>, reconnect the controller, and restart aRacnid. This issue has not been observed so far while using DirectInput mode.',
 
       'faq.q9': 'What should I do if aRacnid is still not working correctly?',
       'faq.a9': 'Make sure the required components are installed and your controller is detected by Windows. If the problem continues, open an issue on the official aRacnid GitHub repository and include your controller model, connection type (USB or Bluetooth), Windows version, and a clear description of the problem.',
@@ -208,6 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'controllers.virtualText': 'DualShock 4 veya Xbox 360 Controller',
       'controllers.unsupportedLabel': 'Şimdilik fiziksel giriş olarak desteklenmiyor',
       'controllers.unsupportedText': 'Xbox 360 / Xbox One / Xbox Series kolları ve Steam Controller',
+      'controllers.f310Note': '<strong>Not:</strong> Logitech F310’un XInput modunda bazı oyunlarda hatalı veya tekrarlanan girişler görülebilmektedir. Sorunun nedeni şu anda araştırılmaktadır. Sorun yaşamamak için kontrolcüyü <strong>DirectInput (D)</strong> modunda kullanmanızı öneririz. Nasıl yapılacağını bilmiyorsanız <strong>SSS 9. maddeye</strong> bakabilirsiniz.',
 
       'faq.title': 'Sık sorulan sorular',
       'faq.subtitle': 'En sık karşılaşılan kurulum ve sorun giderme konuları için hızlı çözümler.',
@@ -237,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a8': 'Bu genellikle bir hata değildir. Sanal çıkış olarak Xbox 360 seçiliyse oyun kontrolcüyü Xbox 360 Controller olarak görür ve A/B/X/Y tuşlarını gösterebilir. Oyun PlayStation tuş simgelerini destekliyorsa sanal çıkışı DualShock 4 olarak seçin.',
 
       'faq.q10': 'Logitech F310 kullanırken tuşlar iki kez algılanıyor veya oyunlarda hatalı çalışıyor. Ne yapmalıyım?',
-      'faq.a10': 'Logitech F310’un arkasındaki X / D anahtarını D (DirectInput) konumuna alın. F310 şu anda XInput modunda bazı oyunlarda L1/R1 gibi tuşların birden fazla kez algılanması gibi sorunlara neden olabilir. DirectInput modu aRacnid ile normal şekilde çalışır. Bu sorun gelecek bir güncellemede ele alınacaktır.',
+      'faq.a10': 'Logitech F310’un <strong>XInput (X)</strong> modunda bazı oyunlarda L1/R1 gibi girişler hatalı veya birden fazla kez algılanabiliyor. Sorunun kesin nedeni şu anda araştırılmaktadır. Geçici çözüm olarak F310’un arkasındaki <strong>X / D</strong> anahtarını <strong>D (DirectInput)</strong> konumuna alın. Ardından kontrolcüyü yeniden bağlayın ve aRacnid’i tekrar başlatın. DirectInput modunda bu sorun şu ana kadar gözlemlenmemiştir.',
 
       'faq.q9': 'aRacnid hâlâ düzgün çalışmıyorsa ne yapmalıyım?',
       'faq.a9': 'Gerekli bileşenlerin kurulu olduğundan ve kontrolcünüzün Windows tarafından algılandığından emin olun. Sorun devam ederse resmi aRacnid GitHub deposunda bir Issue açın. Kontrolcü modelinizi, bağlantı türünü (USB veya Bluetooth), Windows sürümünüzü ve sorunu mümkün olduğunca açık şekilde belirtin.',

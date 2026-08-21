@@ -862,6 +862,24 @@
         </div>
 
 
+        <div class="f310-note reveal">
+
+          <i class="bi bi-exclamation-triangle"></i>
+
+          <p class="mb-0" data-i18n-html="controllers.f310Note">
+
+            <strong>Note:</strong> The Logitech F310 may currently produce
+            incorrect or repeated inputs in some games while using XInput mode.
+            The cause is still being investigated.
+            To avoid issues, we recommend using the controller in
+            <strong>DirectInput (D)</strong> mode.
+            See <strong>FAQ #9</strong> if you are unsure how to switch modes.
+
+          </p>
+
+        </div>
+
+
         <div class="compatibility-notes reveal">
 
           <div class="compat-note good">
@@ -1207,15 +1225,20 @@
 
             <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
 
-              <div class="accordion-body" data-i18n="faq.a10">
+              <div class="accordion-body" data-i18n-html="faq.a10">
 
-                Set the X / D switch on the back of the Logitech F310
-                to D (DirectInput).
-                The F310 may currently behave incorrectly in XInput mode,
-                including inputs such as L1/R1
-                being registered more than once in some games.
-                DirectInput mode works normally with aRacnid.
-                This issue will be addressed in a future update.
+                The Logitech F310 may currently produce
+                incorrect or repeated inputs, such as L1/R1
+                being registered more than once, while using
+                <strong>XInput (X)</strong> mode.
+                The exact cause is still being investigated.
+
+                As a temporary workaround, move the
+                <strong>X / D</strong> switch on the back of the F310 to
+                <strong>D (DirectInput)</strong>,
+                reconnect the controller, and restart aRacnid.
+                This issue has not been observed so far
+                while using DirectInput mode.
 
               </div>
 
