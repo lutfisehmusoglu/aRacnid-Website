@@ -259,6 +259,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  /* Latest release version (GitHub API) */
+  const RELEASE_API_URL =
+    'https://api.github.com/repos/lutfisehmusoglu/aRacnid-GamepadApp/releases/latest';
+
+  const FALLBACK_VERSION = '1.0.3';
+
+  function applyVersion(version) {
+    document
+      .querySelectorAll('[data-version]')
+      .forEach(el => {
+        el.textContent = version;
+      });
+  }
+
+  applyVersion(FALLBACK_VERSION);
+
+  fetch(RELEASE_API_URL)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('HTTP ' + response.status);
+      }
+      return response.json();
+    })
+    .then(data => {
+      const tag =
+        typeof data.tag_name === 'string'
+          ? data.tag_name.trim()
+          : '';
+
+      const version = tag.replace(/^v/i, '');
+
+      if (version) {
+        applyVersion(version);
+      }
+    })
+    .catch(() => {
+      /* keep fallback version silently */
+    });
+
   function handleScroll() {
     const y = window.scrollY;
     navbar?.classList.toggle('scrolled', y > 30);
