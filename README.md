@@ -17,12 +17,12 @@ The older Nexora page filenames remain as lightweight redirects so old local lin
 
 ## Current release links
 
-The site is configured for **v1.0.2**:
+The site is configured for **v1.0.5**:
 
-- Setup: `aRacnid-GamepadApp-Setup-1.0.2-x64.exe`
-- Portable: `aRacnid-GamepadApp-1.0.2-win-x64-portable.zip`
+- Setup: `aRacnid-win-Setup.exe`
+- Portable: `aRacnid-win-Portable.zip`
 
-When a new version is released, update the two GitHub download URLs and visible version text in `index.html`.
+The download buttons use GitHub's `releases/latest/download` URLs. Update the fallback version in `index.html` and `js/main.js` when publishing a new release.
 
 ## App project
 

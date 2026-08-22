@@ -892,6 +892,11 @@ p {
   color: var(--text);
 }
 
+.f310-note a {
+  color: var(--warning);
+  text-underline-offset: .18em;
+}
+
 /* FAQ */
 .faq-section {
   padding: 7rem 0;

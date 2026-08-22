@@ -167,7 +167,7 @@
 
               <span>
                 <i class="bi bi-tag"></i>
-                <strong data-version>1.0.3</strong>
+                <strong data-version>1.0.5</strong>
                 <span data-i18n="hero.latest">
                   Latest Release
                 </span>
@@ -198,7 +198,7 @@
 
               <div class="floating-pill pill-version">
                 <span class="status-dot"></span>
-                <span data-version>1.0.3</span>
+                <span data-version>1.0.5</span>
               </div>
 
               <div class="floating-pill pill-output">
@@ -868,12 +868,12 @@
 
           <p class="mb-0" data-i18n-html="controllers.f310Note">
 
-            <strong>Note:</strong> The Logitech F310 may currently produce
+            <strong>Note:</strong> Logitech F310, F510, and F710 controllers may currently produce
             incorrect or repeated inputs in some games while using XInput mode.
             The cause is still being investigated.
-            To avoid issues, we recommend using the controller in
+            To avoid issues, we recommend using these controllers in
             <strong>DirectInput (D)</strong> mode.
-            See <strong>FAQ #9</strong> if you are unsure how to switch modes.
+            See <a href="#faq10"><strong>FAQ #10</strong></a> if you are unsure how to switch modes.
 
           </p>
 
@@ -1207,46 +1207,6 @@
           </div>
 
 
-          <!-- LOGITECH F310 -->
-          <div class="accordion-item">
-
-            <h3 class="accordion-header">
-
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10"
-                aria-expanded="false" aria-controls="faq10" data-i18n="faq.q10">
-
-                My Logitech F310 registers inputs twice
-                or behaves incorrectly in games.
-                What should I do?
-
-              </button>
-
-            </h3>
-
-            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-
-              <div class="accordion-body" data-i18n-html="faq.a10">
-
-                The Logitech F310 may currently produce
-                incorrect or repeated inputs, such as L1/R1
-                being registered more than once, while using
-                <strong>XInput (X)</strong> mode.
-                The exact cause is still being investigated.
-
-                As a temporary workaround, move the
-                <strong>X / D</strong> switch on the back of the F310 to
-                <strong>D (DirectInput)</strong>,
-                reconnect the controller, and restart aRacnid.
-                This issue has not been observed so far
-                while using DirectInput mode.
-
-              </div>
-
-            </div>
-
-          </div>
-
-
           <!-- FAQ 9 -->
           <div class="accordion-item">
 
@@ -1273,6 +1233,41 @@
                 connection type (USB or Bluetooth),
                 Windows version,
                 and a clear description of the problem.
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- FAQ 10 - LOGITECH XINPUT -->
+          <div class="accordion-item">
+
+            <h3 class="accordion-header">
+
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10"
+                aria-expanded="false" aria-controls="faq10" data-i18n="faq.q10">
+
+                My Logitech F310, F510, or F710 registers inputs twice
+                or behaves incorrectly in games. What should I do?
+
+              </button>
+
+            </h3>
+
+            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+              <div class="accordion-body" data-i18n-html="faq.a10">
+
+                Logitech F310, F510, and F710 controllers may currently produce
+                incorrect or repeated inputs, such as L1/R1 being registered
+                more than once, while using <strong>XInput (X)</strong> mode.
+                The exact cause is still being investigated. As a temporary
+                workaround, move the <strong>X / D</strong> switch on the
+                controller to <strong>D (DirectInput)</strong>, reconnect it,
+                and restart aRacnid. This issue has not been observed so far
+                while using DirectInput mode.
 
               </div>
 
