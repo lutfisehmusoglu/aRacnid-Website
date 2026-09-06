@@ -29,7 +29,7 @@ The Portable card remains separate from Microsoft Store and links to the latest 
 
 ## Publishing
 
-This is a static HTML/CSS/JS site without a build step. No Cloudflare/Wrangler configuration, deployment workflow, project identifier or domain was present in the checkout during inspection. Confirm the existing Cloudflare project and domain before reconnecting; do not create replacements. Deployment, commit and push require the owner's explicit approval. Never place credentials in the source or Git history.
+This is a static HTML/CSS/JS site without a build step. The intended host is GitHub Pages from the main branch; Cloudflare is used only for Web Analytics/Insights. Enable GitHub Pages in the repository settings with main and the root directory, then use the generated github.io URL. Never place credentials in the source or Git history.
 
 ## Verification (2026-09-06)
 
@@ -38,7 +38,7 @@ This is a static HTML/CSS/JS site without a build step. No Cloudflare/Wrangler c
 - The Store fallback page displayed the correct application. Windows/non-Windows URL selection passed isolated checks; non-Windows hardware was not available for an end-to-end test.
 - The Portable card links to the latest GitHub release ZIP. Public download availability depends on the application repository and release asset being publicly accessible.
 - JavaScript syntax, local linked assets, internal anchors, loaded images, EN/TR labels and the download section layout were checked. No browser console errors were captured.
-- The signed-in Cloudflare account showed no Workers & Pages projects. Its existing `aracnidapi.xyz` zone had zero DNS records and reported the root/www hostnames unreachable. The intended existing hosting project/domain must be identified by the owner before reconnection. No cloud settings were changed, and nothing was deployed, committed or pushed.
+- Cloudflare is not the host for this site; it is used only for the Insights beacon included in the page. The aracnidapi.xyz zone currently has no DNS records, so the GitHub Pages URL should be used until a custom domain is configured.
 
 ## App project
 
