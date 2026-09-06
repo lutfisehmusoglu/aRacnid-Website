@@ -17,12 +17,28 @@ The older Nexora page filenames remain as lightweight redirects so old local lin
 
 ## Current release links
 
-The site is configured for **v1.0.5**:
+The main Windows and Setup buttons use the official Microsoft Store badge generator's **Launch mode: Direct** link for **9P63JVQ9ZTX2**:
 
-- Setup: `aRacnid-win-Setup.exe`
-- Portable: `aRacnid-win-Portable.zip`
+`https://get.microsoft.com/installer/download/9P63JVQ9ZTX2?referrer=appbadge`
 
-The download buttons use GitHub's `releases/latest/download` URLs. Update the fallback version in `index.html` and `js/main.js` when publishing a new release.
+Generated using https://apps.microsoft.com/badge on 2026-09-06. This stable product endpoint resolves the current Web Installer; do not replace it with the resulting temporary EXE URL. The custom buttons use ordinary same-tab links, independent of the legacy download handler. No Microsoft badge script is required.
+
+Non-Windows devices use https://apps.microsoft.com/detail/9P63JVQ9ZTX2 instead. A visible Store fallback is also available in the Setup card if the browser cannot download the installer. With JavaScript disabled, the official Direct endpoint still works.
+
+The Portable card remains separate from Microsoft Store and links to the latest GitHub release asset: `aRacnid-win-Portable.zip`. Its legacy download handler remains active.
+
+## Publishing
+
+This is a static HTML/CSS/JS site without a build step. No Cloudflare/Wrangler configuration, deployment workflow, project identifier or domain was present in the checkout during inspection. Confirm the existing Cloudflare project and domain before reconnecting; do not create replacements. Deployment, commit and push require the owner's explicit approval. Never place credentials in the source or Git history.
+
+## Verification (2026-09-06)
+
+- On Windows, both the hero button (English) and Setup button (Turkish) emitted real browser download events while the site stayed open.
+- The downloaded `aRacnid GamepadApp Installer.exe` was 815,136 bytes and had a valid Microsoft Corporation Authenticode signature. Running it opened the Microsoft Store installer for aRacnid GamepadApp and began downloading the app.
+- The Store fallback page displayed the correct application. Windows/non-Windows URL selection passed isolated checks; non-Windows hardware was not available for an end-to-end test.
+- The Portable card links to the latest GitHub release ZIP. Public download availability depends on the application repository and release asset being publicly accessible.
+- JavaScript syntax, local linked assets, internal anchors, loaded images, EN/TR labels and the download section layout were checked. No browser console errors were captured.
+- The signed-in Cloudflare account showed no Workers & Pages projects. Its existing `aracnidapi.xyz` zone had zero DNS records and reported the root/www hostnames unreachable. The intended existing hosting project/domain must be identified by the owner before reconnection. No cloud settings were changed, and nothing was deployed, committed or pushed.
 
 ## App project
 

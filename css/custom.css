@@ -244,6 +244,16 @@ p {
   font-size: .98rem;
 }
 
+.store-fallback {
+  color: #8bc7ff;
+  text-underline-offset: .2em;
+}
+
+.store-fallback:hover,
+.store-fallback:focus {
+  color: #fff;
+}
+
 /* Shared labels/headings */
 .eyebrow {
   display: inline-flex;
