@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'hero.eyebrow': 'Windows gamepad utility',
       'hero.title': 'Take full control of your <span>gamepad.</span>',
-      'hero.description': 'Test, remap, customize and emulate supported controllers on Windows with aRacnid GamepadApp.',
+      'hero.description': 'Test, remap and customize supported controllers on Windows, including motion and touchpad support for virtual DualShock 4 output.',
       'hero.download': 'Download for Windows',
       'hero.github': 'View on GitHub',
       'hero.latest': 'Latest Release',
@@ -29,18 +29,18 @@ document.addEventListener('DOMContentLoaded', () => {
       'download.githubButton': 'Download Setup',
       'download.setupTitle': 'Microsoft Store',
       'download.setupDesc': 'The easiest way to install aRacnid on your PC.',
-      'download.setupButton': 'Download Setup',
+      'download.setupButton': 'Get from Microsoft Store',
       'download.storeFallback': 'Download unavailable? Open Microsoft Store',
       'download.portableTitle': 'Portable ZIP',
       'download.portableDesc': 'Extract the archive and run aRacnid without using the installer.',
       'download.portableButton': 'Download ZIP',
-      'download.smartScreen': 'Run the downloaded Microsoft Store Web Installer to install aRacnid from Microsoft Store.',
+      'download.smartScreen': 'The Microsoft Store Web Installer is Microsoft-signed. GitHub Setup and Portable packages are currently unsigned and may show a SmartScreen warning.',
 
       'install.eyebrow': 'Installation',
       'install.title': 'Up and running in four steps',
       'install.subtitle': 'After your download starts, follow these steps to prepare virtual controller output.',
       'install.step1Title': 'Download',
-      'install.step1Text': 'Run the Setup installer, or extract the Portable ZIP.',
+      'install.step1Text': 'Install from Microsoft Store, run the GitHub Setup, or extract the Portable ZIP.',
       'install.step2Title': 'Launch aRacnid',
       'install.step2Text': 'Open the app and select or create your profile.',
       'install.step3Title': 'Manage Components',
@@ -50,19 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'features.eyebrow': 'Features',
       'features.title': 'Everything you need between your controller and the game',
-      'features.subtitle': 'Built around real-time testing, flexible remapping and clean virtual controller output.',
+      'features.subtitle': 'Real-time testing, flexible remapping, motion and touchpad support, and clean virtual controller output.',
 
-      'features.testerTitle': 'Gamepad Tester',
-      'features.testerText': 'See buttons, sticks, triggers and controller status react in real time. aRacnid can visualize both DualShock-style and Xbox-style layouts.',
-      'features.testerPoint1': 'Live button and analog feedback',
-      'features.testerPoint2': 'Connection and battery information',
-      'features.testerPoint3': 'DS4 and Xbox visual layouts',
+      'features.testerTitle': 'Live Tester, Motion & Touchpad',
+      'features.testerText': 'Watch buttons, sticks, triggers and DualShock 4 touch contacts react in real time, and forward supported motion data to virtual DualShock 4 output.',
+      'features.testerPoint1': 'Gyroscope and accelerometer passthrough',
+      'features.testerPoint2': 'Single- and dual-touch trails with click highlight',
+      'features.testerPoint3': 'Normal, Mouse and Disabled touchpad modes',
 
       'features.remapTitle': 'Button Remapping',
-      'features.remapText': 'Map buttons, sticks and triggers to the output layout you want, then tune deadzone, anti-deadzone and sensitivity settings.',
-      'features.remapPoint1': 'Per-control remapping',
+      'features.remapText': 'Map buttons, sticks, triggers and touchpad clicks to the output layout you want, then tune deadzone, anti-deadzone and sensitivity settings.',
+      'features.remapPoint1': 'Touchpad-click binding capture',
       'features.remapPoint2': 'Analog deadzone and sensitivity controls',
-      'features.remapPoint3': 'Vibration testing and trigger mappings',
+      'features.remapPoint3': 'DS4 touchpad click to Xbox Back / View',
 
       'features.virtualTitle': 'Virtual DS4 or Xbox 360 Output',
       'features.virtualText': 'Use a supported physical controller and present it to games as a virtual DualShock 4 or Xbox 360 Controller.',
@@ -73,6 +73,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'features.lightbarPoint1': 'Color picker with RGB and HEX controls',
       'features.lightbarPoint2': 'Quick color presets',
       'features.lightbarPoint3': 'Lightbar on/off control',
+
+      'features.updateTitle': 'Updates & Background Behavior',
+      'features.updateText': 'aRacnid detects whether it was installed from GitHub or Microsoft Store and uses only the matching stable update channel.',
+      'features.updatePoint1': 'GitHub Setup download with SHA-256 verification',
+      'features.updatePoint2': 'Microsoft Store updates through Windows Store APIs',
+      'features.updatePoint3': 'Direct minimize-to-tray behavior and low-battery alerts',
 
       'features.advancedTitle': 'Advanced Components',
       'features.advancedText': 'Manage the drivers used for virtual controller output from inside the app. HidHide also includes a Configure action for double-input prevention.',
@@ -102,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a3': 'Yes. Supported controllers can be used over Bluetooth when the controller and Windows provide a compatible Bluetooth connection. USB connections are also supported.',
 
       'faq.q4': 'Why does Windows SmartScreen show a warning?',
-      'faq.a4': 'The Microsoft Store Web Installer is signed by Microsoft. The separately distributed Portable build may still trigger SmartScreen on first launch. Download aRacnid only from the official GitHub repository or this website.',
+      'faq.a4': 'The Microsoft Store Web Installer is signed by Microsoft. GitHub Setup and Portable packages are currently unsigned, so Windows may show a SmartScreen warning on first launch. Download aRacnid only from the official GitHub repository or this website, and verify the published SHA-256 checksums when using GitHub packages.',
 
       'faq.q5': 'My controller causes double input in games. What should I do?',
       'faq.a5': 'First, close aRacnid and connect your controller to your PC. Open HidHide Configuration and go to the Devices tab. Check the box next to your controller, then enable Enable device hiding at the bottom of the window. Finally, disconnect your controller once and reconnect it.',
@@ -128,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'footer.tagline': 'Gamepad testing, remapping, customization and virtual output for Windows.',
       'footer.support': 'Support',
-      'footer.privacy': 'Privacy-first: aRacnid does not collect telemetry, usage data or personal information.',
+      'footer.privacy': 'The aRacnid desktop app does not collect telemetry or personal data. This website uses privacy-friendly, anonymous Cloudflare Web Analytics.',
       'footer.developed': 'Developed by',
       'footer.license': 'aRacnid GamepadApp is licensed under GPL-3.0.',
       'footer.disclaimer': 'aRacnid is not affiliated with or endorsed by Sony Interactive Entertainment, Microsoft, Nintendo, Valve, or Logitech.',
@@ -145,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'hero.eyebrow': 'Windows gamepad aracı',
       'hero.title': 'Gamepad kontrolünü tamamen <span>eline al.</span>',
-      'hero.description': 'aRacnid GamepadApp ile desteklenen kontrolcüleri Windows üzerinde test et, yeniden eşle, özelleştir ve sanal gamepad olarak kullan.',
+      'hero.description': 'Desteklenen kontrolcüleri Windows üzerinde test et, yeniden eşle ve özelleştir; sanal DualShock 4 çıkışında hareket ve touchpad desteğini kullan.',
       'hero.download': 'Windows için İndir',
       'hero.github': 'GitHub’da Görüntüle',
       'hero.latest': 'Son Sürüm',
@@ -159,18 +165,18 @@ document.addEventListener('DOMContentLoaded', () => {
       'download.githubButton': 'Setup İndir',
       'download.setupTitle': 'Microsoft Store',
       'download.setupDesc': 'aRacnid’i bilgisayarına kurmanın en kolay yolu.',
-      'download.setupButton': 'Setup İndir',
+      'download.setupButton': 'Microsoft Store’dan İndir',
       'download.storeFallback': 'İndirme başlamadı mı? Microsoft Store’u aç',
       'download.portableTitle': 'Portable ZIP',
       'download.portableDesc': 'Arşivi çıkar ve kurulum kullanmadan aRacnid’i çalıştır.',
       'download.portableButton': 'ZIP İndir',
-      'download.smartScreen': 'aRacnid’i Microsoft Store üzerinden kurmak için indirdiğiniz Microsoft Store Web Installer dosyasını çalıştırın.',
+      'download.smartScreen': 'Microsoft Store Web Installer Microsoft imzalıdır. GitHub Setup ve Portable paketleri şu anda imzasız olduğu için SmartScreen uyarısı gösterebilir.',
 
       'install.eyebrow': 'Kurulum',
       'install.title': 'Dört adımda kullanıma hazır',
       'install.subtitle': 'İndirme başladıktan sonra sanal gamepad çıkışını hazırlamak için bu adımları takip et.',
       'install.step1Title': 'İndir',
-      'install.step1Text': 'Setup dosyasını çalıştır veya Portable ZIP’i çıkar.',
+      'install.step1Text': 'Microsoft Store’dan kur, GitHub Setup’ı çalıştır veya Portable ZIP’i çıkar.',
       'install.step2Title': 'aRacnid’i Aç',
       'install.step2Text': 'Uygulamayı aç ve profilini seç veya yeni profil oluştur.',
       'install.step3Title': 'Bileşenleri Yönet',
@@ -180,19 +186,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'features.eyebrow': 'Özellikler',
       'features.title': 'Kontrolcün ile oyun arasında ihtiyacın olan her şey',
-      'features.subtitle': 'Gerçek zamanlı test, esnek tuş atama ve temiz sanal gamepad çıkışı üzerine kuruldu.',
+      'features.subtitle': 'Gerçek zamanlı test, esnek tuş atama, hareket ve touchpad desteği ile temiz sanal gamepad çıkışı.',
 
-      'features.testerTitle': 'Gamepad Tester',
-      'features.testerText': 'Tuşları, analogları, tetikleri ve gamepad durumunu gerçek zamanlı olarak gör. aRacnid hem DualShock hem Xbox tarzı düzenleri görselleştirebilir.',
-      'features.testerPoint1': 'Canlı tuş ve analog geri bildirimi',
-      'features.testerPoint2': 'Bağlantı ve pil bilgisi',
-      'features.testerPoint3': 'DS4 ve Xbox görsel düzenleri',
+      'features.testerTitle': 'Canlı Tester, Hareket ve Touchpad',
+      'features.testerText': 'Tuşları, analogları, tetikleri ve DualShock 4 touchpad temaslarını gerçek zamanlı gör; desteklenen hareket verilerini sanal DualShock 4 çıkışına aktar.',
+      'features.testerPoint1': 'Jiroskop ve ivmeölçer aktarımı',
+      'features.testerPoint2': 'Tıklama vurgulu tek ve çift dokunma izleri',
+      'features.testerPoint3': 'Normal, Fare ve Devre Dışı touchpad modları',
 
       'features.remapTitle': 'Tuş Atamaları',
-      'features.remapText': 'Tuşları, analogları ve tetikleri istediğin çıkış düzenine eşle; deadzone, anti-deadzone ve hassasiyet ayarlarını düzenle.',
-      'features.remapPoint1': 'Kontrol bazlı yeniden eşleme',
+      'features.remapText': 'Tuşları, analogları, tetikleri ve touchpad tıklamasını istediğin çıkış düzenine eşle; deadzone, anti-deadzone ve hassasiyet ayarlarını düzenle.',
+      'features.remapPoint1': 'Touchpad tıklamasını tuş atamasında yakalama',
       'features.remapPoint2': 'Analog deadzone ve hassasiyet ayarları',
-      'features.remapPoint3': 'Titreşim testi ve tetik eşlemeleri',
+      'features.remapPoint3': 'DS4 touchpad tıklamasını Xbox Back / View olarak eşleme',
 
       'features.virtualTitle': 'Sanal DS4 veya Xbox 360 Çıkışı',
       'features.virtualText': 'Desteklenen fiziksel kontrolcünü oyunlara sanal DualShock 4 veya Xbox 360 Controller olarak göster.',
@@ -203,6 +209,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'features.lightbarPoint1': 'RGB ve HEX kontrollü renk seçici',
       'features.lightbarPoint2': 'Hızlı renk presetleri',
       'features.lightbarPoint3': 'Lightbar açma/kapatma kontrolü',
+
+      'features.updateTitle': 'Güncellemeler ve Arka Plan Davranışı',
+      'features.updateText': 'aRacnid, GitHub veya Microsoft Store kurulumunu algılar ve yalnızca ilgili kararlı güncelleme kanalını kullanır.',
+      'features.updatePoint1': 'SHA-256 doğrulamalı GitHub Setup indirme',
+      'features.updatePoint2': 'Windows Store API’leri üzerinden Microsoft Store güncellemesi',
+      'features.updatePoint3': 'Doğrudan sistem tepsisine küçültme ve düşük pil uyarıları',
 
       'features.advancedTitle': 'Gelişmiş Bileşenler',
       'features.advancedText': 'Sanal gamepad çıkışı için kullanılan sürücüleri uygulama içinden yönet. HidHide, çift input sorununu önlemek için ayrıca Yapılandır seçeneği sunar.',
@@ -232,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'faq.a3': 'Evet. Desteklenen kontrolcüler, kontrolcü ve Windows uyumlu bir Bluetooth bağlantısı sağladığında Bluetooth üzerinden kullanılabilir. USB bağlantısı da desteklenir.',
 
       'faq.q4': 'Windows SmartScreen neden uyarı gösteriyor?',
-      'faq.a4': 'Microsoft Store Web Installer Microsoft tarafından imzalanır. Ayrı dağıtılan Portable sürüm ilk çalıştırmada yine de SmartScreen uyarısı gösterebilir. aRacnid’i yalnızca resmi GitHub deposundan veya bu siteden indirin.',
+      'faq.a4': 'Microsoft Store Web Installer Microsoft tarafından imzalanır. GitHub Setup ve Portable paketleri şu anda imzasız olduğundan Windows ilk çalıştırmada SmartScreen uyarısı gösterebilir. aRacnid’i yalnızca resmi GitHub deposundan veya bu siteden indirin; GitHub paketlerini kullanırken yayımlanan SHA-256 değerlerini doğrulayın.',
 
       'faq.q5': 'Kolum oyunlarda çift atlama / çift input yapıyor. Ne yapmalıyım?',
       'faq.a5': 'Önce aRacnid’i kapatın ve kontrolcünüzü bilgisayara bağlayın. HidHide Configuration uygulamasını açıp Devices sekmesine gidin. Listede bulunan kontrolcünüzün yanındaki kutucuğu işaretleyin ve pencerenin altındaki Enable device hiding seçeneğini etkinleştirin. Son olarak kontrolcünüzü bilgisayardan bir kez çıkarıp yeniden bağlayın.',
@@ -258,7 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       'footer.tagline': 'Windows için gamepad test, tuş atama, özelleştirme ve sanal çıkış aracı.',
       'footer.support': 'Destek',
-      'footer.privacy': 'Gizlilik odaklı: aRacnid telemetri, kullanım verisi veya kişisel bilgi toplamaz.',
+      'footer.privacy': 'aRacnid masaüstü uygulaması telemetri veya kişisel veri toplamaz. Bu site, gizlilik odaklı anonim Cloudflare Web Analytics kullanır.',
       'footer.developed': 'Geliştiren',
       'footer.license': 'aRacnid GamepadApp GPL-3.0 ile lisanslanmıştır.',
       'footer.disclaimer': 'aRacnid; Sony Interactive Entertainment, Microsoft, Nintendo, Valve veya Logitech ile bağlantılı değildir ve bu şirketler tarafından desteklenmemektedir.',
@@ -271,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const RELEASE_API_URL =
     'https://api.github.com/repos/lutfisehmusoglu/aRacnid-GamepadApp/releases/latest';
 
-  const FALLBACK_VERSION = '1.1.0';
+  const FALLBACK_VERSION = '1.1.4';
 
   function applyVersion(version) {
     document
